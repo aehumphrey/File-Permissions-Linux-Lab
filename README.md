@@ -1,22 +1,21 @@
-# File-Permissions-Linux-Lab
-
-# SECURITY AUDIT LAB
+# FILE PERMISSIONS IN LINUX LAB
 
 ## Objective
 
-The Security Audit Lab project aimed to mimic the conditions for a real-world security audit. The primary objective was to complete an internal security audit for a fictional company. The goal of the audit was to provide an overview of the risks and/or fines that the company might experience due to the current state of their security posture. The tasks involved reviewing the scope, goals, and risk assessment report. Then, to perform an internal audit by completing a controls and compliance checklist.
+This lab demonstrates my capabilities in updating file permissions in Linux. In this scenario, the research team at my organization needs to update the file permissions to reflect the correct level of authorization. This involves reviewing current permissions, identifying discrepancies, and adjusting settings accordingly. Ultimately, the new file permissions mitigate potential risks associated with unauthorized access.
 
 ### Skills Learned
 
-- Advanced understanding of compliance evaluation (GDPR, NIST, PCI DSS, ISO) and practical application.
-- Proficiency in audit planning and execution.
-- Ability to communicate audit findings effectively through comprehensive documentation.
-- Enhanced knowledge of risk identification and assessment.
-- Development of critical thinking and problem-solving skills in cybersecurity.
+- Advanced comprehension of file permissions and ownership nuances in Linux.
+- Mastery of command-line utilities such as 'chmod' and 'chown'.
+- Proficiency in diagnosing and resolving permission-related challenges.
+- Comprehensive knowledge of permission levels (user, group, others) and their practical implementation.
+- Enhanced critical thinking and problem-solving abilities applicable to cybersecurity contexts.
+
 
 ### Tools Used
 
-- Information provided in the Botium Toys scope, goals, and risk assessment report provides context for the assessment.
+- Linux (Debian)
 
 ## Steps
 
