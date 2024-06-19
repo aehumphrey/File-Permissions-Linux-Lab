@@ -1,4 +1,4 @@
-# FILE PERMISSIONS IN LINUX LAB
+# Lab: Modifying File Permissions in Linux
 
 ## Objective
 
@@ -12,7 +12,6 @@ This lab demonstrates my capabilities in updating file permissions in Linux. In 
 - Comprehensive knowledge of permission levels (user, group, others) and their practical implementation.
 - Enhanced critical thinking and problem-solving abilities applicable to cybersecurity contexts.
 
-
 ### Tools Used
 
 - Linux (Debian)
@@ -21,14 +20,72 @@ This lab demonstrates my capabilities in updating file permissions in Linux. In 
 
 ### Step One 
 
+Description: Check File and Directory Details
+
+I used the following Linux commands in the Bash shell to determine the existing permission sets for a specific directory in the file system:
+
+<img width="910" alt="LL_Step One" src="https://github.com/aehumphrey/File-Permissions-Linux-Lab/assets/33531835/f8b7ec86-dd7e-4876-b049-56c4ce25e967">
+
+*Ref 1. Using ls-la command to display current file permissions.*
+
+First, I navigated to the projects directory using cd projects. Next, I used the ls command with the -la modifier to display a list of the file contents, including hidden files. The output revealed that there is one directory named drafts, five project files, and one hidden file named .project_x.txt.
+
 
 ### Step Two
+
+Description: Describe the permissions string
+
+The 10-character string included with each file in the directory can be deciphered to understand the current file authorizations and permissions as follows:
+1st character: This is either (d) or (-) and indicates the file type. D is for directory; hyphen (-) is for regular file.
+2nd-4th characters: This first trio following the file type reflects user permissions: read (r), write (w), and execute (x). If the character is a hyphen (-), this permission is not granted to the user.
+5th-7th characters: This second trio reflects group permissions:  read (r), write (w), and execute (x). If the character is a hyphen (-), this permission is not granted to the group.
+8th-10th characters: This final trio reflects all other permissions beyond the user and the group (others). As with user and group, these permissions are read (r), write (w), and execute (x). If the character is a hyphen (-), this permission is not granted for others.
+
+As an example, project_t.xt has the permissions -rw-rw-r--. This means:
+1st character: (-) indicates project_t.txt is not a directory
+2nd-4th characters: The user can read and write. The user cannot execute.
+5th-7th characters: The group can read and write. The group cannot execute.
+8th-10th characters: Others can read. Others cannot write or execute.
 
 
 ### Step Three
 
+Description: Change file permissions
+
+In this scenario, my organization wants to remove write access from “other” across all files. To accomplish this, I referred to the initial file permissions (see Ref 1.) The file project_k.txt allowed others write access.
+
+The following code demonstrates how I used Linux commands to remove write access from project_k.txt:
+
+<img width="662" alt="LL_Step Two" src="https://github.com/aehumphrey/File-Permissions-Linux-Lab/assets/33531835/67f58bfe-8fc3-478f-b96e-d36cfd369855">
+
+*Ref 2: Using chmod to change permissions on project_k.txt.*
+
+
 
 ### Step Four
+
+Description: Change file permissions on a hidden file
+
+TEXT
+
+<img width="730" alt="LL_Step Three" src="https://github.com/aehumphrey/File-Permissions-Linux-Lab/assets/33531835/cecbc297-8bf5-429d-9b10-d3d1b38b4fc2">
+
+*Ref 3: Using chmod to change permissions on project_x.txt.*
+
+
+
+### Step Five
+
+Description: Change directory permissions
+
+TEXT
+
+<img width="732" alt="LL_Step Four" src="https://github.com/aehumphrey/File-Permissions-Linux-Lab/assets/33531835/4bf1fce4-8d4e-453c-af16-951431595e3a">
+
+*Ref 4: Using chmod to change permissions on the drafts directory*
+
+
+
 
 
 
