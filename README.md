@@ -1,4 +1,4 @@
-# Lab: Modifying File Permissions in Linux
+# Managing Authorization Lab
 
 ## Objective
 
