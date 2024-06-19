@@ -14,7 +14,7 @@ This lab demonstrates my capabilities in updating file permissions in Linux. In 
 
 ### Tools Used
 
-- Linux (Debian)
+- Linux (Bash)
 
 ## Steps
 
@@ -60,6 +60,7 @@ The following code demonstrates how I used Linux commands to remove write access
 
 *Ref 2: Using chmod to change permissions on project_k.txt.*
 
+The command chmod modifies permissions on files and directories. The first argument indicates what permissions should be changed and the second argument specifies the file or directory to which these changes will be applied. In this case, o-w project_k.txt removes write permissions from ‘other’ on the file project_k.txt. To review my changes and ensure they were applied correctly, I used ls-la to display a list of updated permissions.
 
 
 ### Step Four
